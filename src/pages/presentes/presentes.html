@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color="danger">
+
+    <!-- BOTAO MENU -->
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+
+    <!-- TITULO -->
+    <ion-title>
+      <span class="titulo-topo">Presentes</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card class="center" *ngFor="let lista of listas">
+    <ion-card-content>
+      <img src="{{getUrlImage(lista.imagem)}}">
+    </ion-card-content>
+  </ion-card>
+
+      <ion-card class="center">
+        <ion-card-content>
+          <i class="fa fa-plane icon-size" aria-hidden="true"></i>
+          <h2>
+            COTAS PARA LUA DE MEL
+          </h2>
+        </ion-card-content>
+      </ion-card>
+
+        <ion-card class="center">
+          <ion-card-content>
+            <i class="fa fa-gift icon-size" aria-hidden="true"></i>
+            <h2>
+              COTAS PARA CASA
+            </h2>
+          </ion-card-content>
+        </ion-card>
+
+</ion-content>

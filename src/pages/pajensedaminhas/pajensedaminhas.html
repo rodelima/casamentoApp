@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="danger">
+
+    <!-- BOTAO MENU -->
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+
+    <!-- TITULO -->
+    <ion-title>
+      <span class="titulo-topo">Pajens e Daminhas</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card *ngFor="let pajenOuDaminha of content">
+    <ion-item>
+    <h2><b>{{pajenOuDaminha.nome}}</b></h2><br>
+    <img id="foto" src="{{getUrlImage(pajenOuDaminha.imagem)}}">
+    </ion-item>
+    <ion-card-content>
+    <p id="renderizaTexto">{{pajenOuDaminha.texto}}</p>
+  </ion-card-content>
+  </ion-card>
+
+</ion-content>

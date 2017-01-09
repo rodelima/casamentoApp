@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="danger">
+
+    <!-- BOTAO MENU -->
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+
+    <!-- TITULO -->
+    <ion-title>
+      <span class="titulo-topo">Padrinhos</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card *ngFor="let padrinho of content">
+    <ion-item>
+    <h2><b>{{padrinho.nome}}</b></h2><br>
+    <img id="foto" src="{{getUrlImage(padrinho.imagem)}}">
+    </ion-item>
+    <ion-card-content>
+    <p id="renderizaTexto">{{padrinho.texto}}</p>
+  </ion-card-content>
+  </ion-card>
+
+</ion-content>

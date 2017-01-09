@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color="danger">
+
+    <!-- BOTAO VOLTAR -->
+    <ion-buttons left>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="md-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <!-- BOTAO ENVIAR -->
+    <ion-buttons end (click)="enviarRecado()">
+      <button ion-button icon-only>
+        Enviar <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <!-- TITULO -->
+    <ion-title>
+      Novo Recado
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list inset>
+    <ion-item>
+      <ion-input placeholder="Qual seu nome?" autocomplete [(ngModel)]="todo.nome" name="nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-textarea rows="15" placeholder="Escreva aqui sua mensagem" autocomplete [(ngModel)]="todo.recado" name="recado"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

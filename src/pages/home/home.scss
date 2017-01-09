@@ -1,0 +1,24 @@
+page-home {
+  .imagem {
+    overflow: hidden;
+    position: relative;
+    height: 70vh;
+    width: 100%;
+  }
+  .swiper-slide img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    height: 100%;
+    width: auto;
+    max-width: none;
+    min-width: 100%;
+  }
+  .titulo {
+    font-family: 'Alex Brush', cursive;
+    border-bottom: 1px solid red;
+    color: red;
+    font-size: 28px;
+  }
+}

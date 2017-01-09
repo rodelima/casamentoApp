@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar color="danger">
+
+    <!-- BOTAO MENU -->
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+
+    <!-- TITULO -->
+    <ion-title>
+      <span class="titulo-topo">Festa</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <img src="http://www.salaodefestasembh.com.br/upload/imagens/fotos/SALAO-DE-FESTAS-EM-BH-SALABERRY-RECEPCOES_673817_2013_11_4_26_8_80301.jpg">
+    <ion-card-content>
+      <h2 class="center"><b>SALABERRY RECEPÇÕES</b></h2>
+    </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-item>
+        <i class="fa fa-map-signs icon-size" aria-hidden="true" item-left></i>
+        <h2>Ponto de referência: </h2>
+        <p>Praça da Liberdade</p>
+      </ion-item>
+    </ion-card>
+
+  <ion-card (click)="addCalendar()">
+    <ion-item>
+      <i class="fa fa-calendar icon-size" aria-hidden="true" item-left></i>
+      <h2>Data:</h2>
+      <p>Sábado, 20 de Agosto de 2016</p>
+      <p>Toque para adicionar ao<br> calendário do seu celular</p>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <i class="fa fa-clock-o icon-size" aria-hidden="true" item-left></i>
+      <h2>Horário:</h2>
+      <p>22h:30 min</p>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <i class="fa fa-map-marker icon-size" aria-hidden="true" item-left></i>
+      <h2>Local:</h2>
+      <p>Rua da Bahia, 2066 - Lourdes</p>
+      <p>Belo Horizonte - Minas Gerais</p>
+    </ion-item>
+    <ion-item>
+      <img src="http://www.telegraph.co.uk/content/dam/news/2016/11/27/dump-tower-twitter-large_trans_NvBQzQNjv4BqeY8zn44CJx5co60z9sMGTUWjmulo7wva9c-kqRbE-Zc.jpg">
+    </ion-item>
+  </ion-card>
+</ion-content>

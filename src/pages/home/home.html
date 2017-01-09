@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="danger">
+
+    <!-- BOTAO MENU -->
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+
+    <!-- TITULO -->
+      <ion-title>
+        <span class="titulo-topo">Marina</span> <ion-icon name="heart"></ion-icon> <span class="titulo-topo">Rodrigo</span>
+      </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="slide-topo">
+
+  <ion-slides [options]="mySlideOptions" *ngIf="imagensHome">
+
+    <ion-slide *ngFor="let imagem of imagensHome">
+     <div class="imagem"><img src="{{getUrlImage(imagem.link)}}"></div>
+    </ion-slide>
+
+  </ion-slides>
+</div>
+
+<div><h3 class="titulo center">20 de Agosto de 2016</h3></div>
+
+  <ion-card>
+    <ion-item (click)="novoRecado()">
+      <p>Escreva uma mensagem para o casal <br><br></p>
+    </ion-item>
+  </ion-card>
+  <ion-card *ngFor="let recado of recados">
+    <ion-item>
+      <h2><b>{{recado.nome}}</b></h2>
+      <p>escrito em {{recado.data}}</p>
+      <p>às {{recado.horario}}</p>
+    </ion-item>
+    <ion-card-content>
+      <p id="renderizaTexto">{{recado.recado}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

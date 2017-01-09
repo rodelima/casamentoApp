@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="danger">
+
+    <!-- BOTAO MENU -->
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+
+    <!-- TITULO -->
+    <ion-title>
+      <span class="titulo-topo">Sobre o Casal</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+<ion-card>
+<div class="imagem">
+  <img src="{{getUrlImage()}}">
+</div>
+  <div class="titulo">
+    <span class="titulo-topo">Marina</span> <ion-icon name="heart"></ion-icon> <span class="titulo-topo">Rodrigo</span>
+  </div>
+
+  <div class="texto-sobre">
+    <p id="renderizaTexto">{{content.texto}}</p>
+</div>
+
+
+
+</ion-card>
+</ion-content>

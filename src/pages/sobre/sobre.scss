@@ -1,0 +1,26 @@
+page-sobre {
+  .imagem {
+    overflow: hidden;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+  }
+  .imagem img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    height: auto;
+    width: auto;
+    max-width: none;
+    min-width: 100%;
+  }
+  .titulo {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+  }
+  .texto-sobre {
+    padding: 10px 20px;
+  }
+}

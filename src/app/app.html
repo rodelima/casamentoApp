@@ -1,0 +1,25 @@
+<ion-menu [content]="menu">
+  <ion-header>
+   <ion-toolbar color="danger">
+   <h1 style="color: white; margin-top: 5px; margin-left: 10px;">
+     <span class="titulo-topo">Marina</span> <ion-icon name="heart" style="font-size: 22px"></ion-icon> <span class="titulo-topo">Rodrigo</span>
+     <br>
+     <span style="font-family: 'Alex Brush', cursive; font-size: 24px;">Save The Date:</span>
+     <br>
+     <span style="font-family: 'Alex Brush', cursive; font-size: 20px;">20/08/2016</span>
+   </h1>
+   </ion-toolbar>
+ </ion-header>
+ <ion-content>
+   <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon class={{p.icon}}></ion-icon> {{p.title}}
+      </button>
+         <button menuClose ion-item (click)="sair()">
+           Sair
+         </button>
+    </ion-list>
+ </ion-content>
+</ion-menu>
+
+<ion-nav #menu [root]="rootPage"></ion-nav>
